@@ -1,0 +1,183 @@
+<!DOCTYPE html>
+<html>
+<head>
+	<meta charset="utf-8">
+	<meta name="viewport" content="width=device-width, initial-scale=1">
+	<title>home</title>
+	<style type="text/css">
+		* {
+             box-sizing: border-box;
+        }
+        body{
+            margin: 0;
+        }
+        
+		/* header */ 
+		nav{
+			overflow: hidden;
+			top: -20;
+			background-color: #008b8b;
+			width: 100%;
+			padding: 0px;
+			font: bold 15px Traditional;
+			color: #ffffff;
+			position: sticky;
+			
+		}
+		.btn{
+			float: left;
+			display: block;
+			padding: 10px;
+			margin: 0px;
+			border: none;
+			font: 15px Traditional ;
+			background-color:#008b8b ;
+			height: 100px;
+			width: 100px;
+			transition: transform .3s;
+			transform-origin: y;
+		}
+		.btn:hover{
+			top: 0;
+			background-color: #ee3b3b;
+			box-shadow: 0 5px 0 0 #006400;
+			border-bottom: 7px solid #006400 ;
+			
+            transform: scale(1.1);
+            
+		  
+		}
+		.btn:active{
+			top: -10;
+			background-color: #ee3b3b;
+			border-bottom: 5px solid #006400 ; 
+		}
+		.active{
+			background-color: #ee3b3b;
+			border-bottom: 5px solid #006400; 
+		}
+		a{
+			text-decoration: none;
+			color: #ffffff;
+			font: 15px Traditional ;
+		}
+		/* linkleri düzenle ,
+		---------------
+		--------------
+		------------
+		*/
+
+		
+
+		#rightnav{
+			float: right;
+		}
+
+		/* body */
+		
+		#body{
+			position: relative;
+			height: 700px;
+		}
+		#lbrd{
+			margin-left: 20px;
+			border-left: 3px solid #ee3b3b;
+			text-indent: 10px;
+			font: bold 24px Traditional;
+			color: #008b8b;
+		}
+		#brdu{
+			border: none;
+			padding: 20px 175px 20px 175px;
+			position: relative;
+
+		}
+		#brda{
+			border-top: 1px solid #dcdcdc;
+			border-left: none;
+			border-right: none;
+			width: 430px;
+			font: bold 15px Traditional;
+			color: #000000;
+			padding: 15px;
+
+		}
+		#brdt{
+			border: 1px solid #dcdcdc;
+			border-top: 5px solid #ee3b3b;
+			margin-bottom:50px ;
+		}
+		table{
+			margin: 20px;
+		}
+		#p{
+			font: bold 15px Traditional;
+			color: #008b8b;
+		}
+
+		/* footer*/
+		footer{
+			background:#008b8b ;
+			font: 15px Traditional;
+			color: #ffffff;
+			text-align: center;
+			padding: 5px 5px 1px 5px;
+			margin-bottom: 0px;
+			width: 100%;
+			position: static;
+		}
+		.line{
+			display: inline;
+		}
+		#altagec{
+			width: 50px;
+			display: inline-block;
+			word-break: break-word;
+			border-right: 1px solid #ffffff;
+			text-align: left;
+		}
+		
+
+	</style>
+</head>
+<body>
+		<nav>
+			<button  class="btn , active"><a href="home.html"><img src="dashboard.png">Dashboard</a></button>
+			<button  class="btn"><a href="parent.html"><img src="parentnav.png">Parent</a></button>
+			<button  class="btn"><a href="teacher.html"><img src="teachernav.png">Teacher</a></button>
+			<button  class="btn"><a href="#"><img src="student.png">Student</a></button>
+			<button  class="btn"><a href="admin.html"><img src="adminnav.png">Admin</a></button>
+			<button  class="btn" id="rightnav"><a href="#"><img src="logout.png">Logout</a></button>
+			
+		</nav>
+	
+	<div id="body">
+		<div id="lbrd">
+			<p> Dashboard</p>
+		</div>
+		<div>
+			<table cellspacing="15">
+				<tr>
+					<td id="brdt"><div id="brdu"><img src="name.png"></div><div id="brda"><span id="p">Full name:</span><span>test test</span></div></td>
+
+					<td id="brdt"><div id="brdu"><img src="email.png"></div><div id="brda"><span id="p">Email:</span><span>root@root.com</span></div></td>
+
+					<td id="brdt"><div id="brdu"><img src="number.png"></div><div id="brda"><span id="p">Phone Number:</span><span>951847632</span></div></td>
+				</tr>
+				<tr>
+					<td colspan="1" id="brdt"><div id="brdu"><img src="address.png"></div><div id="brda"><span id="p">Address:</span><span>amman</span></div></td>
+				</tr>
+			</table>
+		</div>
+		
+	</div>
+		<footer>
+		 <div>
+			<span class="line"><div  class="line"> <p id="altagec">About us</p></div></span> 
+			<span class="line"><a href="contact.html">Contact us</a></span>	
+		 </div>
+		 <p> Copyright &copy; 2016 BluLogix, LLC. All Rights Reserved. </p>
+	    </footer>
+	
+</body>
+</html>

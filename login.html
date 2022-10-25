@@ -1,0 +1,107 @@
+<!DOCTYPE html>
+<html>
+<head>
+	<meta charset="utf-8">
+	<meta name="viewport" content="width=device-width, initial-scale=1">
+	<title>login </title>
+
+	<!-- Add icon library -->
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css">
+
+	<style type="text/css">
+
+        #div{
+        	display: block;
+        	position: absolute;
+        }
+		#div1{
+			margin: 200px 500px 0px 700px;
+			color: #008b8b;
+			display: block;
+			text-align: center;
+			align-items: center;
+			position: relative;
+		}
+		p{
+			margin-top: 0px;
+			padding: 0px 0px 0px 10px;
+			font: bold 15px Traditional;
+			color:#ee3b3b;
+		}
+		#div2{
+			margin: 0px 500px 200px 700px ;
+			position: relative;
+			padding: 10px;	
+			border: 1px solid #dcdcdc;
+			width: 400px;
+			display: block;
+		}
+		form{
+			font: bold 15px Traditional;
+			color: #008b8b ;
+			position: relative;
+			margin: 1px;
+			padding: 20px ;
+			display: block;	
+			width: 400px;
+			text-height: 1.5;
+		}
+		 #txt1,#txt2{
+			display: block;
+			/*border: 1px solid #dcdcdc;*/
+			margin-top:5px ;
+			font: bold 15px Traditional;
+			
+		}
+		.in{
+			border-radius: 2px;
+			padding: 10px 10px 10px 20px;
+			font: 15px roboto ;
+			width: 325px;
+			border: 1px solid #dcdcdc;
+		}
+		.in:hover{
+			border: 1px solid #6495ed;
+		}
+		#btn{
+			margin-top:15px ;
+			padding: 10px 50px 10px 50px;
+			background-color: #ee3b3b;
+			font: bold 15px Traditional;
+			color: #ffffff;
+			border: 1px solid #dcdcdc;
+			cursor: pointer;	
+		}
+		a:hover,a:active,a:visited,a:link{
+			font: bold 15px Traditional;
+			text-decoration: none;
+			color: #ffffff;
+		}
+
+	</style>
+</head>
+<body>
+	<div id="div">
+	  <div id="div1">
+		 <img src="login.png">
+	     <p id="txt">Login to your account</p>
+	  </div>
+	  <div id="div2">
+	 	 <form>
+	 		Enter your user name and password.
+	 	
+	 		<label for="username" id="txt1" >User name</label>
+	 		<input type="text" name="username" class="in">
+	 		
+	 		<label for="password" id="txt2" >Password</label>
+	 		<input type="password" name="password" class="in" placeholder="Enter Password" >
+             <br>
+	 		<!--<input type="button" name="login" id="btn" value="Login">-->
+	 		<button id="btn" type="submit"><a href="home.html"><i class="fa fa-sign-in" aria-hidden="true"></i> Login</a></button>
+
+
+	 	 </form>
+      </div>
+     </div>
+</body>
+</html>

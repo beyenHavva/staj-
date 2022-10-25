@@ -1,0 +1,330 @@
+<!DOCTYPE html>
+<html>
+<head>
+	<meta charset="utf-8">
+	<meta name="viewport" content="width=device-width, initial-scale=1">
+	<title>contact</title>
+	<style type="text/css">
+		* {
+             box-sizing: border-box;
+        }
+        body{
+            margin: 0;
+        }
+        
+		/* header */ 
+		
+		nav{
+			overflow: hidden;
+			top: -20;
+			background-color: #008b8b;
+			width: 100%;
+			padding: 0px;
+			font: bold 15px Traditional;
+			color: #ffffff;
+			position: sticky;
+			
+		}
+		.btn{
+			float: left;
+			display: block;
+			padding: 10px;
+			margin: 0px;
+			border: none;
+			font: 15px Traditional ;
+			background-color:#008b8b ;
+			height: 100px;
+			width: 100px;
+			transition: transform .3s;
+			transform-origin: y;
+		}
+		.btn:hover{
+			top: 0;
+			background-color: #ee3b3b;
+			box-shadow: 0 5px 0 0 #006400;
+			border-bottom: 7px solid #006400 ;
+			
+            transform: scale(1.1);
+            
+		  
+		}
+		.btn:active{
+			top: -10;
+			background-color: #ee3b3b;
+			border-bottom: 5px solid #006400 ; 
+		}
+		.active{
+			background-color: #ee3b3b;
+			border-bottom: 5px solid #006400; 
+		}
+		a{
+			text-decoration: none;
+			color: #ffffff;
+			font: 15px Traditional ;
+		}
+		/* linkleri düzenle ,
+		---------------
+		--------------
+		------------
+		*/
+
+		
+
+		#rightnav{
+			float: right;
+		}
+		
+		/* body */
+		
+		#body{
+			position: sticky;
+			height: 715px;
+			padding: 20px;
+			margin-bottom: 20px;
+		}
+		#ustdiv{
+			margin-top: 20px;
+			margin-left: 20px;
+		}
+		#altdiv{
+			margin-top: -10px;
+			margin-left: 20px;
+			padding-top: 0px;
+		}
+		
+		#lbrd{
+			margin-left: 20px;
+			margin-top: 10px;
+			border-left: 3px solid #ee3b3b;
+			text-indent: 10px;
+			font: bold 24px Traditional;
+			color: #008b8b;
+		}
+		#brdu{
+			border: none;
+			padding: 20px 175px 20px 175px;
+			position: relative;
+
+		}
+		#brda{
+			border-top: 1px solid #dcdcdc;
+			border-left: none;
+			border-right: none;
+			width: 430px;
+			font: bold 15px Traditional;
+			color: #000000;
+			padding: 15px;
+
+		}
+		#brdt{
+			border: 1px solid #dcdcdc;
+			border-top: 5px solid #ee3b3b;
+			margin-bottom:50px ;
+		}
+		table{
+			margin: 20px;
+		}
+		#p{
+			font: bold 15px Traditional;
+			color: #008b8b;
+			padding: 0px;
+			margin: 0px;
+			margin-top: 30px;
+		}
+		#pblack{
+			font: bold 15px Traditional;
+			color: #000000;
+			padding: 0px;
+			margin: 0px;
+		}
+		#sectioncontact:after{
+			display: table;
+			clear: both;
+		}
+		#s{
+			width: 25%;
+			float: left;
+		}
+		#s2{
+			width:20%;
+			float: left;
+		}
+		#s3{
+			width: 80%;
+			float: left;
+		}
+		#greenbrd{
+			border: 2px solid #008b8b;
+			padding: 10px;
+		}
+
+		.col-25{
+			width: 7%;
+			float: left;
+			margin-top: 10px;
+		}
+		.col-75{
+			width: 93%;
+			float: left;
+			margin-top: 10px;
+		}
+
+		.in{
+			margin-bottom: 15px;
+			margin-right: 30px;
+			text-indent:10px ;
+			border-radius: 2px;
+			padding: 10px 10px 10px 20px;
+			font: 15px roboto ;
+			width: 650px;
+			border: 1px solid #dcdcdc;
+		}
+
+		#txt1{
+			color: #008b8b;
+			font: bold 15px Traditional;
+		}
+		#redbtn2{
+			background:#ff3030 ;
+			font: 15px Traditional;
+			color: #ffffff;
+			border: 1px solid #ff3030 ;
+			border-radius: 1px;	
+			margin: 5px;
+			
+			padding:10px 50px 10px 50px;
+			position: relative;
+		}
+
+		/* footer*/
+		footer{
+			background:#008b8b ;
+			font: 15px Traditional;
+			color: #ffffff;
+			text-align: center;
+			padding: 5px 5px 1px 5px;
+			margin-bottom: 0px;
+			width: 100%;
+			position: static;
+		}
+		.line{
+			display: inline;
+		}
+		#altagec{
+			width: 40px;
+			display: inline-block;
+			word-break: break-word;
+			border-right: 1px solid #ffffff;
+			text-align: left;
+		}
+
+	</style>
+</head>
+<body>
+		<nav>
+			<button  class="btn , active"><a href="home.html"><img src="dashboard.png">Dashboard</a></button>
+			<button  class="btn"><a href="parent.html"><img src="parentnav.png">Parent</a></button>
+			<button  class="btn"><a href="teacher.html"><img src="teachernav.png">Teacher</a></button>
+			<button  class="btn"><a href="#"><img src="student.png">Student</a></button>
+			<button  class="btn"><a href="admin.html"><img src="adminnav.png">Admin</a></button>
+			<button  class="btn" id="rightnav"><a href="#"><img src="logout.png">Logout</a></button>
+			
+		</nav>
+		<div id="body">
+			<div id="ustdiv">
+			  <section id="sectioncontact">
+				<section id="s">
+					<section id="s2"> 
+						<img src="adresimg.png" name="imgadres" id="greenbrd">
+						 </section>
+					<section id="s3">
+						<p id="p">Adress:</p>
+						<p id="pblack">737 walker road great falls,va 22066</p>
+					</section>
+				</section>
+				<section id="s">
+					<section id="s2">
+						<img src="phoneimg.png" name="imgphone" id="greenbrd">
+					</section>
+					<section id="s3">
+						<p id="p">Phone:</p>
+						<p id="pblack">443,333,4100</p>
+					</section>
+				</section>
+				<section id="s">
+					<section id="s2">
+						<img src="emailimg.png" name="imgmail" id="greenbrd">
+					</section>
+					<section id="s3">
+						<p id="p">Email:</p>
+						<p id="pblack">info@blulogix.com</p>
+					</section>
+				</section>
+				<section id="s">
+					<section id="s2">
+						<img src="faximg.png" name="imgfax" id="greenbrd">
+					</section>
+					<section id="s3">
+						<p id="p">Fax:</p>
+						<p id="pblack">4433334104</p>
+					</section>
+				</section>
+			  </section>
+		    </div>
+		    <br><br><br>
+		    <div>
+		       <p id="lbrd"> Contact Us</p>
+		    </div>
+		    <div id="altdiv">
+		    	<form >
+		    	  <div class="row">
+
+		    	  	<div class="col-25">
+		    	  		<label for="msg" id="txt1">Your Messege*</label><br>
+		    	  	</div>
+		    	  	<div class="col-75">
+		    	  		<br><textarea id="messege" class="in" name="msg" placeholder="Tybe here ro send us a message ..." style="height:200px"></textarea>
+		    	  	</div>
+		    	  </div>
+		    	  <div class="row">
+		    	  	<div class="col-25">
+		    	  		<label for="fname" id="txt1">First name*</label>
+		    	  	</div>
+		    	  	<div class="col-75">
+		    	  		<input type="text" id="fname" class="in" name="firstname" placeholder="Your name(required)">
+		    	  	</div>
+		    	  </div>
+		    	  <div class="row">
+		    	  	<div class="col-25">
+		    	  		 <label for="lname" id="txt1">Last Name*</label>
+		    	  	</div>
+		    	  	<div class="col-75">
+		    	  		<input type="text" id="lname" class="in" name="lastname" placeholder="Your last name(required)">
+		    	  	</div>
+		    	  </div>
+		    	  <div class="row">
+		    	  	<div class="col-25">
+		    	  		 <label for="mail" id="txt1">Your Email*</label>
+		    	  	</div>
+		    	  	<div class="col-75">
+		    	  		 <input type="text" id="email" class="in" name="mail" placeholder="Your email address(required)">
+		    	  	</div>
+		    	  </div>
+		    	  <div class="row">
+                         <input type="submit" value="Send" id="redbtn2">
+                  </div>
+		  
+		    	</form>
+		    </div>
+		</div>
+		
+		<footer>
+		 <div>
+			<span class="line"><div  class="line"> <p id="altagec">Help </p></div></span> 
+			<span class="line"><a href="contact.html">Contact us</a></span>	
+		 </div>
+		 <p> Copyright &copy; 2016 BluLogix, LLC. All Rights Reserved. </p>
+	    </footer>
+	
+</body>
+</html>

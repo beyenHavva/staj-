@@ -1,0 +1,446 @@
+<!DOCTYPE html>
+<html>
+<head>
+	<meta charset="utf-8">
+	<meta name="viewport" content="width=device-width, initial-scale=1">
+	<title>teacher
+	</title>
+
+	<link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css">
+    
+	<style type="text/css">
+		* {
+             box-sizing: border-box;
+        }
+        body{
+            margin: 0;
+        }
+
+
+		nav{
+			overflow: hidden;
+			top: -20;
+			background-color: #008b8b;
+			width: 100%;
+			padding: 0px;
+			font: bold 15px Traditional;
+			color: #ffffff;
+			position: sticky;
+			
+		}
+		
+		.btn{
+			float: left;
+			display: block;
+			padding: 10px;
+			margin: 0px;
+			border: none;
+			font: 15px Traditional ;
+			background-color:#008b8b ;
+			height: 100px;
+			width: 100px;
+			transition: transform .3s;
+			transform-origin: y;
+		}
+		.btn:hover{
+			top: 0;
+			background-color: #ee3b3b;
+			box-shadow: 0 5px 0 0 #006400;
+			border-bottom: 7px solid #006400 ;
+			
+            transform: scale(1.1);
+            
+		  
+		}
+		.btn:active{
+			top: -10;
+			background-color: #ee3b3b;
+			border-bottom: 5px solid #006400 ; 
+		}
+		.active{
+			background-color: #ee3b3b;
+			border-bottom: 5px solid #006400; 
+		}
+		a{
+			text-decoration: none;
+			color: #ffffff;
+			font: 15px Traditional ;
+		}
+		#rightnav{
+			float: right;
+		}
+
+		/* body */
+		
+		#body{
+			position: sticky;
+			height: 750px;
+		}
+		#lbrd{
+			margin-left: 20px;
+			border-left: 3px solid #ee3b3b;
+			text-indent: 10px;
+			font: bold 24px Traditional;
+			color: #008b8b;
+		}
+		#brdu{
+			border: none;
+			padding: 20px 175px 20px 175px;
+			position: relative;
+
+		}
+		#brda{
+			border-top: 1px solid #dcdcdc;
+			border-left: none;
+			border-right: none;
+			width: 100%;
+			font: bold 15px Traditional;
+			color: #000000;
+			padding: 15px;
+
+		}
+		#brdt{
+			border: 1px solid #dcdcdc;
+			border-top: 5px solid #ee3b3b;
+		}
+		table,th,td{
+			color:#008b8b ;
+			border: 2px solid #20b2aa ;
+			border-collapse: collapse;
+		}
+		table{
+			width: 98%;
+			margin-left: 20px;
+			margin-right: 20px;
+			margin-bottom: 10px;
+			position: relative;
+		}
+		th{
+		    font: bold 15px Traditional;
+			padding-top: 5px;
+			padding-bottom: 5px;
+		    background-color: #d1eeee;
+		}
+		td{
+			text-align: left;
+			font: bold 15px Traditional;
+			padding-left: 3px ;
+			padding-top: 5px;
+			padding-bottom: 5px;
+		
+		}
+		#center{
+			text-align: center;
+		}
+		#left1{
+			width: 20%;
+			float: left;
+
+		}
+		#left2{
+			width: 20%;
+			float: left;
+		}
+		#left3{
+			width: 20%;
+			float: left;
+		}
+
+		#right{
+			width: 40%;
+			float: right;
+		}
+		#txt1{
+			color: #008b8b;
+		}
+		section{
+			display:table;
+			line-height:1.25;
+
+		}
+		fieldset{
+			font: bold 15px Traditional;
+			margin: 10px;
+			margin-left: 30px;
+			padding: 30px ;
+			text-height: 1.5;
+			border:1px solid #dcdcdc;
+			margin-bottom: 150px;
+		}
+		.in{
+			margin-bottom: 15px;
+			margin-right: 30px;
+			text-indent:10px ;
+			border-radius: 2px;
+			padding: 10px 10px 10px 20px;
+			font: 15px roboto ;
+			width: 450px;
+			border: 1px solid #dcdcdc;
+		}
+		legend{
+			 color: #ee3b3b;
+
+		}
+		#altimg,#rightdiv{
+			float: right;
+		}
+
+
+		#p{
+			font: bold 15px Traditional;
+			color: #008b8b;
+		}
+		#greenbtn{
+			background:#008b8b ;
+			font: 15px Traditional;
+			color: #ffffff;
+			border: 1px solid #008b8b ;
+			border-radius: 1px;
+			
+		}
+		#redbtn{
+			background:#ff3030 ;
+			font: 15px Traditional;
+			color: #ffffff;
+			border: 1px solid #008b8b ;
+			border-radius: 1px;	
+			margin-left: 20px;
+			margin-top: 5px;
+			padding:10px 50px 10px 50px;
+		}
+		#box{
+			display: none;
+		}
+		#redbtn2{
+			background:#ff3030 ;
+			font: 15px Traditional;
+			color: #ffffff;
+			border: 1px solid #ff3030 ;
+			border-radius: 1px;	
+			margin: 5px;
+			
+			padding:10px 50px 10px 50px;
+			position: relative;
+		}
+
+		/* footer*/
+		footer{
+			clear: both;   
+			background:#008b8b ;
+			font: 15px Traditional;
+			color: #ffffff;
+			text-align: center;
+			padding: 5px 5px 1px 5px;
+			margin-bottom: 0px;
+			width: 100%;
+			position: sticky;
+		}
+		.line{
+			display: inline;
+		}
+		#altagec{
+			width: 50px;
+			display: inline-block;
+			word-break: break-word;
+			border-right: 1px solid #ffffff;
+			text-align: left;
+		}
+
+		
+
+	</style>
+</head>
+<body>
+
+	<nav>
+			<button  class="btn , active"><a href="home.html"><img src="dashboard.png">Dashboard</a></button>
+			<button  class="btn"><a href="parent.html"><img src="parentnav.png">Parent</a></button>
+			<button  class="btn , active"><a href="teacher.html"><img src="teachernav.png">Teacher</a></button>
+			<button  class="btn"><a href="#"><img src="student.png">Student</a></button>
+			<button  class="btn"><a href="admin.html"><img src="adminnav.png">Admin</a></button>
+			<button  class="btn" id="rightnav"><a href="#"><img src="logout.png">Logout</a></button>
+			
+    </nav>
+
+    <div id="body">
+		<div id="lbrd">
+			<p> Teachers</p>
+		</div>
+		<div>
+			<table>
+				<tr>
+					<th>ID</th>
+					<th>First name</th>
+					<th>Last name</th>
+					<th>PhoneNumber</th>
+					<th>Email</th>
+					<th>Address</th>
+					<th>Class</th>
+					<th>Material</th>
+					<th>Action</th>
+				</tr>
+				<tr>
+					<td>1</td>
+					<td>Irene</td>
+					<td>Alder</td>
+					<td>64565645645</td>
+					<td>ireneAdler30032016@gmail.com</td>
+					<td>384 Mayfair Street Union, NJ 07083</td>
+					<td>C</td>
+					<td>C++</td>
+					<td id="center"><button id="greenbtn"><i class="fa fa-trash-o" aria-hidden="true"></i> Delete</button></td>
+				</tr>
+				<tr>
+					<td>2</td>
+					<td>John</td>
+					<td>Watson</td>
+					<td>76868567546</td>
+					<td>Johnwatson30032016@gmail.com</td>
+					<td>384 Mayfair Street Union, NJ 08546</td>
+					<td>A</td>
+					<td>PHP</td>
+					<td id="center"><button id="greenbtn"><i class="fa fa-trash-o" aria-hidden="true"></i> Delete</button></td>
+				</tr>
+				<tr>
+					<td>3</td>
+					<td>Mycroft</td>
+					<td>Holmes</td>
+					<td>34663422767</td>
+					<td>Mycroftholmes30032016@gmail.com</td>
+					<td>384 Mayfair Street Union, NJ 07083</td>
+					<td>e</td>
+					<td>Java</td>
+					<td id="center"><button id="greenbtn"><i class="fa fa-trash-o" aria-hidden="true"></i> Delete</button></td>
+				</tr>
+				<tr>
+					<td>4</td>
+					<td>Root</td>
+					<td>Root</td>
+					<td>7894613</td>
+					<td>root@root.com</td>
+					<td>Amman test1</td>
+					<td>ASD</td>
+					<td>ASDFED</td>
+					<td id="center"><button id="greenbtn"><i class="fa fa-trash-o" aria-hidden="true"></i> Delete</button></td>
+				</tr>
+				<tr>
+					<td>5</td>
+					<td>Root</td>
+					<td>Root</td>
+					<td>Root</td>
+					<td>root@root.com</td>
+					<td>Amman test1</td>
+					<td>ASSD</td>
+					<td>ASDFE</td>
+					<td id="center"><button id="greenbtn"><i class="fa fa-trash-o" aria-hidden="true"></i> Delete</button></td>
+				</tr>
+				<tr>
+					<td>6</td>
+					<td>test</td>
+					<td>root teacher</td>
+					<td>7894646 2</td>
+					<td>test@test.com</td>
+					<td>Test add new teacher address</td>
+					<td>ASDA</td>
+					<td>wdfefe</td>
+					<td id="center"><button id="greenbtn"><i class="fa fa-trash-o" aria-hidden="true"></i> Delete</button></td>
+				</tr>
+				<tr>
+					<td>7</td>
+					<td>dfgsdfg</td>
+					<td>sdfgsdfg</td>
+					<td>sdfgsdfgsdfg</td>
+					<td>sdfgsdfg</td>
+					<td>sdfgsdf</td>
+					<td>sdfsdfgsd</td>
+					<td>sdfgsdfgsdfg</td>
+					<td id="center"><button id="greenbtn"><i class="fa fa-trash-o" aria-hidden="true"></i> Delete</button></td>
+				</tr>
+				<tr>
+					<td>8</td>
+					<td></td>
+					<td></td>
+					<td></td>
+					<td></td>
+					<td></td>
+					<td></td>
+					<td></td>
+					<td id="center"><button id="greenbtn"><i class="fa fa-trash-o" aria-hidden="true"></i> Delete</button></td>
+				</tr>
+				
+			</table>
+
+			<button id="redbtn"><i class="fa fa-plus" ></i> Add</button>
+		</div>
+          <div>
+			<fieldset id = "box">
+
+                 <legend id="myLegend">Add parent</legend>
+                  <section id="left1">
+
+                  	<label for="fname" id="txt1" >First name:</label><br><input type="text" name="fname" class="in" placeholder="First name"required>
+                  	<br>
+                  	<label for="mail" id="txt2" >Email:</label><br><input type="text" name="mail" class="in" placeholder="test@gmail.com"required>
+                  	<br>
+                  	<label for="adres" id="txt2" >Address:</label><br><input type="text" name="adres" class="in" placeholder="Address"required>
+
+                  </section>
+                  <section id="left2">
+
+                  	<label for="lname" id="txt2" >Last name:</label><br><input type="text" name="lname" class="in" placeholder="Last name:"required>
+                  	<br>
+                    <label for="class" id="txt2" >Class:</label><br><input type="text" name="class" class="in" placeholder="A"required>
+                
+                  </section>
+                  <section id="left3">
+
+                  	<label for="phone" id="txt2" >Phone  Number:</label><br><input type="text" name="phone" class="in" placeholder=" 7894613"required>
+                  	<br>
+                  	<label for="mat" id="txt1" > Material:</label><br><input type="text" name="mat" class="in" placeholder="C++"required>
+
+
+                  </section>
+                  <section>
+                  	<br><br><br><br>
+                  	<section id="right">
+                  	<img src="teacher.png" id="altimg">
+                  </section>
+                  
+                  <div id="rightdiv">
+                  	<button id="redbtn2"><i class="fa fa-floppy-o" aria-hidden="true" onclick="mysecFunction()"></i> Save</button>
+                  	<button id="redbtn2"><i class="fa fa-times" aria-hidden="true" onclick="mysecFunction()"></i> Cancel</button>
+                  </div>
+                  </section>
+                  	
+            </fieldset>
+		</div> 
+        <script type="text/javascript">
+	   const box = document.getElementById('box');
+
+       const redbtn = document.getElementById('redbtn');
+
+       redbtn.addEventListener('click', function handleClick() {
+       if (box.style.display === 'none') {
+          box.style.display = 'block';
+          redbtn.textContent = 'ADD';
+       } else {
+          box.style.display = 'none';
+         redbtn.textContent = 'ADD';
+       }
+
+       });
+      </script>  
+		
+	</div>
+
+
+    <footer>
+		 <div>
+			<span class="line"><div  class="line"> <p id="altagec">About us</p></div></span> 
+			<span class="line"><a href="contact.html">Contact us</a></span>	
+		 </div>
+		 <p> Copyright &copy; 2016 BluLogix, LLC. All Rights Reserved. </p>
+	</footer>
+
+</body>
+</html>
